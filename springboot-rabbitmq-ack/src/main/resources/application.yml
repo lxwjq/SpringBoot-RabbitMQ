@@ -2,7 +2,7 @@ server:
     port: 9082
 spring:
   rabbitmq:
-    host: 118.190.40.58
+    host: 127.0.0.1
     port: 5672
     username: guest
     password: guest
@@ -21,6 +21,7 @@ spring:
 #        是否支持重试
         retry:
           enabled: true
+    virtual-host: /
 logging:
   config:
     classpath: logback.xml
